@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   siteMetadata: {
-    title: "Aselo Blog",
+    title: "Aselo",
     description: "My awesome blog.",
     url: "https://blog74619.gatsbyjs.io/",
   },
@@ -11,6 +11,19 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         defaultLayouts: { default: path.resolve("./src/components/layout.js") },
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+              escapeEntities: {},
+            },
+          }
+        ],
       },
     },
     "gatsby-plugin-react-helmet",

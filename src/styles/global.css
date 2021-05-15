@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Ubuntu", Arial, sans-serif;
+  @apply text-lg;
+  @apply font-normal;
+  @apply text-gray-800;
+}
+
+p {
+  @apply my-6;
+}

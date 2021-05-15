@@ -1,19 +1,39 @@
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import Image from '../components/image'
 import SEO from '../components/seo'
+import Warning from '../components/utils/warning'
+import Info from '../components/utils/info'
+import Danger from '../components/utils/danger'
+import Success from '../components/utils/success'
+import Divider from '../components/utils/divider'
 
 <SEO title="Home" keywords={['gatsby', 'application', 'react']} />
 
 # Hi people
 
-Welcome to your new Gatsby site.
+<Warning>Attention, do not copy paste code from blog</Warning>
+<Info>Attention, do not copy paste code from blog</Info>
+<Danger>Attention, do not copy paste code from blog</Danger>
+<Success>Attention, do not copy paste code from blog</Success>
 
-Now go build something great.
+Attention, do not copy paste code from blog
+Attention, do not copy paste code from blog
+Attention, do not copy paste code from blog
+Attention, do not copy paste code from blog
+Attention, do not copy paste code from blog
+Attention, do not copy paste code from blog
+Attention, do not copy paste code from blog
 
-<div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-  <Image />
-</div>
+
+```js
+let a = 0;
+function toto() {
+  return 'toto'
+}
+```
+
+<Divider />
+
 <Link to="/page-2/">Go to page 2</Link>
 
